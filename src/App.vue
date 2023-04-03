@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view />
+    <Mor></Mor>
   </div>
 </template>
+
+<script>
+import Mor from 'morringhan/src/Mor.vue'
+
+export default {
+  components: {
+    Mor
+  }
+}
+
+</script>
 
 <style>
 #app {
@@ -24,9 +31,5 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
