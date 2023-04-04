@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Mor></Mor>
+    <Mor :paramJson = "{ type: 'boolean', 'object-quantity': 10 }"/>
+    <hr/>
+    <Mor :paramJson = "{ type: 'boolean', 'object-quantity': 5 }"/>
   </div>
 </template>
 
